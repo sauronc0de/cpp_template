@@ -1,0 +1,54 @@
+{
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.formatOnSave": true,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "git.postCommitCommand": "push",
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build"
+    ],
+    "cmake.useCMakePresets": "always",
+    "cmake.loggingLevel": "debug",
+    "cmake.options.advanced": {
+        "build": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "launch": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "debug": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "cpack": {
+            "statusBarVisibility": "hidden",
+            "inheritDefault": "hidden"
+        },
+        "workflow": {
+            "statusBarVisibility": "hidden",
+            "inheritDefault": "hidden"
+        },
+        "workflowPreset": {
+            "statusBarVisibility": "hidden",
+            "inheritDefault": "hidden"
+        },
+        "packagePreset": {
+            "statusBarVisibility": "hidden",
+            "inheritDefault": "hidden"
+        },
+        "testPreset": {
+            "statusBarVisibility": "hidden",
+            "inheritDefault": "hidden"
+        },
+        "buildTarget": {
+            "statusBarVisibility": "hidden",
+            "inheritDefault": "hidden"
+        },
+        "buildPreset": {
+            "statusBarVisibility": "hidden",
+            "inheritDefault": "hidden"
+        }
+    },
+    "cmake.options.statusBarVisibility": "visible"
+}

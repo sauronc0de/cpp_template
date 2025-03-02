@@ -1,0 +1,26 @@
+{
+    "version": 3,
+    "configurePresets": [
+      {
+        "name": "config-base",
+        "description": "General build",
+        "hidden": true,
+        "generator": "Unix Makefiles",
+        "binaryDir": "${sourceDir}/build",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug"
+        }
+      },
+      {
+        "name": "Release",
+        "description": "✅ Release preset",
+        "inherits": "config-base"
+      },      
+      {
+        "name": "Test",
+        "description": "🧪 Execute test",
+        "inherits": "config-base"
+      }
+    ]
+  }
+  
